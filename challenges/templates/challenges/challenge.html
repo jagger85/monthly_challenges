@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+    {% block content %}
+    <h1>The challenge for {{month}} month's</h1>
+        {% if not text %}
+        <h2>There is no challenge for this month</h2>
+        {% else %}
+        <h2>{{ text }}</h2>
+        {% endif %}  
+    {% endblock %}
